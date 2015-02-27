@@ -1,10 +1,6 @@
 .footer {
 	margin: -60px auto;
-	//min-width: 800px;
 	max-width: 1280px;
-	//height: 60px;
-	//background: #BFF08E;
-	//position: relative;
     color: white;
     text-align: center;
 }

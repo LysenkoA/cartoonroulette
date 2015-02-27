@@ -53,7 +53,7 @@ function notCorrectUserRole (action) {
     }
 }
 
-$('.cartoon-cat').on('click', function () { // click категория мультфильмов
+$('.cartoon-cat').on('click', function () {
     if ( $('.cartoon-cat').hasClass('active-cat') ) {
         return false;
     } else {
@@ -65,22 +65,18 @@ $('.cartoon-cat').on('click', function () { // click категория муль
     } 
 });
 
-$('.users-cat').on('click', function () { // click категория юзеров
+$('.users-cat').on('click', function () {
     
     canselAddItemPanel ();
     
     if ( $('.users-cat').hasClass('active-cat') ) {
-        console.log('has-active-cat');
         return false;
-        console.log('go...');
     } else {
         $('.cartoon-cat').removeClass('active-cat');
         $('.users-cat').addClass('active-cat');
         
-        $('.add-item, .admin-table').hide(); // спрятать мультфильмы
-        $('.admin-users').show(); // показать пользователей
-        
-//        построить список пользователей
+        $('.add-item, .admin-table').hide();
+        $('.admin-users').show();
         
         $.ajax ({
             url: "./system/admin.php",
@@ -139,7 +135,6 @@ $('.users-list-table-body').on('click', '.fa-edit', function () {
     curId = parseInt(curId.substring(1));
     
     var curEl = $(this).parent().parent();
-    console.log(curEl);
     
     var edName = $('<input>', {
         type: 'text',
@@ -251,16 +246,9 @@ $('.users-list-table-body').on('click', '.fa-times-circle', function () {
         .done ( function (res) {
             if (curId == res) { 
                 $('.users-list-table-body #u'+res).hide();
-                console.log(res);
-                //var mes = 'Cartoon successfully REMOVED!';
-                //var actClass = 'confirm-item';
-                //messAddDel (mes, actClass); 
             }
             else {
                 console.log('error');
-                //var mes = 'Something has gone wrong!';
-                //var actClass = 'error-add';
-                //messAddDel (mes, actClass);
             }
         });
 });
@@ -276,7 +264,6 @@ $('.but-add-user').on('click', function () {
             class: 'new-user-panel'
         }).appendTo('.add-new-user');
 
-        //name
         $('<input>', {
             id: 'name-new-user',
             type: 'text'
@@ -286,7 +273,7 @@ $('.but-add-user').on('click', function () {
             for: 'name-new-user',
             text: 'Name'
         }).insertBefore('#name-new-user');
-        //email
+
         $('<input>', {
             id: 'email-new-user',
             type: 'text'
@@ -296,7 +283,7 @@ $('.but-add-user').on('click', function () {
             for: 'email-new-user',
             text: 'E-mail'
         }).insertBefore('#email-new-user');
-        //pass
+
         $('<input>', {
             id: 'pass-new-user',
             type: 'text'
@@ -306,7 +293,7 @@ $('.but-add-user').on('click', function () {
             for: 'pass-new-user',
             text: 'Password'
         }).insertBefore('#pass-new-user');
-        //role
+
         $('<select>', {
             id: 'role-new-user'
         }).appendTo('.new-user-panel');
@@ -388,7 +375,6 @@ $('.add-new-user').on('click', '#submit-new-user', function () {
     })
         .done( function (res) {
         
-        console.log (res);
             if (res > 0) {
                 var userId = 'u'+res;
                 $('<tr>', {

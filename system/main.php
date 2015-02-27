@@ -37,9 +37,7 @@ if (isset($_POST['age_post']) && isset($_POST['gen_post']) && isset($_POST['coun
 else if ($_POST['getfavorite'] == true) {
     
     $ids = $_POST['idsfavorite'];
-    //$comma_separated = implode(",", $somearr);
     $ids = substr($ids, 1, -1);
-    //echo $ids;
     
     $query = "SELECT * FROM mult WHERE id IN (".$ids.")";
 }

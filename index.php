@@ -158,11 +158,10 @@
 </div><!-- .wrapper -->
 
 <footer class="footer">
-	&copy; Cartoon roulette <span><a href="">GitHub</a></span>
+	&copy; Cartoon roulette <span><a href="https://github.com/LysenkoA/cartoonroulette">GitHub</a></span>
 </footer><!-- .footer -->
 
 <script src="assets/lib/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
-<script src="assets/js/authorization.js"></script>
 </body>
 </html>

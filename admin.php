@@ -7,9 +7,7 @@ require ('system/checkpass.php');
     <head>
         <meta charset="utf-8">
         <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
+	    <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
         <title>Admin panel</title>
         <link rel="stylesheet" href="assets/css/preload.css">
         <link rel="stylesheet" href="assets/css/general.css">
@@ -33,7 +31,6 @@ require ('system/checkpass.php');
                     </a>
                 </div>
                 <div class="authorization">
-        <!--            <a href="admin.php">Admin</a>-->
                     <div id="login">
                         Sign In <span class="fa fa-sign-in fa-2x"></span>
                     </div>
@@ -151,14 +148,12 @@ require ('system/checkpass.php');
             
             </main><!-- .content -->   
         
-        
         </div><!-- .wrapper -->
 
         <footer class="footer">
-            &copy; Cartoon roulette <span><a href="">GitHub</a></span>
+            &copy; Cartoon roulette <span><a href="https://github.com/LysenkoA/cartoonroulette">GitHub</a></span>
         </footer><!-- .footer -->
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
 <script src="assets/lib/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 <script src="assets/js/admin-cartoons-script.js"></script>

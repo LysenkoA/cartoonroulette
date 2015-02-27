@@ -21,7 +21,6 @@ if (isset ($_COOKIE['userId']) && isset($_COOKIE['userName'])) {
 
 else {
     header("Location:registration.php");
-    //exit();
 }
 
 ?>

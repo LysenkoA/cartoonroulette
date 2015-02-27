@@ -3,7 +3,6 @@
     margin: 0 0 50px 0;
     padding: 15px 0 0 0;
     text-align: center;
-    
 }
 
 .cartoon-cat, .users-cat {
@@ -70,8 +69,7 @@
 
 /*  cartoons   */
 
-
-.add-item {                     /* div с кнопкой добавления */
+.add-item {
     margin: 15px 0px 10px 10px;
 } 
 
@@ -84,7 +82,7 @@
     box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;    
 }
 
-#add-button {                    /* кпопка добавления */
+#add-button {
 
 }
 
@@ -93,21 +91,21 @@
     background-color: rgba(4, 185, 4, 0.75);
 }
 
-.confirm-item {            /* всплывающее сообщение подтвержд. */
+.confirm-item {
     color: rgba(2, 162, 2, 0.85);
     font-weight: bold;
     margin-left: 40px;
     text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.87) ;
 }
 
-.error-add {                /* ошибка добавления или удаления */
+.error-add {
     color: rgba(255, 0, 0, 0.85);
     font-weight: bold;
     margin-left: 40px;
     text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.87) ;    
 }
 
-.add-item-panel {            /* окно добавления мультфильма */
+.add-item-panel {
     margin: 20px 5px 10px 5px;
     padding: 5px;
     background-color: rgba(87, 232, 232, 0.65);
@@ -129,7 +127,7 @@
     display: inline-table;
 }
 
-.mess-add-new {                /* поле не заполнено */
+.mess-add-new {
     color: rgba(255, 0, 0, 0.79);
     font-size: 0.8em;
 }
@@ -157,7 +155,7 @@
     padding: 10px;
 }
 
-#submit-add-item {            /* подтверждение добавления */
+#submit-add-item {
     padding: 10px 10px 5px 10px;
     color: white;
     background-color: #38e65d;
@@ -193,11 +191,11 @@
 
 /*        users       */
 
-.admin-users { /* user's div in admin panel */
+.admin-users {
     display: none;
 }
 
-.add-new-user { /* div  кнопкой для добавления пользователя */
+.add-new-user {
     margin: 50px 20px;
 }
 
@@ -265,8 +263,6 @@
     color: blue;
 }
 
-/* редактирование юзера */
-
 #new-name, #new-email, #new-role, #ed-cancel, #ed-submit {
     display: block;
 }
@@ -281,8 +277,7 @@
     border: none;
 }
 
-/* */
-
+/* table style*/
 .table-style {
     margin: 20px 10px 10px 10px;
     width: 98%;

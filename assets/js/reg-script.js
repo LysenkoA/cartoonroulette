@@ -92,7 +92,6 @@ $('#reg-submit').on('click', function () {
                 document.cookie = "userId="+userData.id;
                 document.location.href = "index.php";                
             }
-
         })
 });
 

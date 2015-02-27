@@ -34,7 +34,6 @@ $(document).ready ( function () {
                     .append('<td>'+items[i].country+'</td>')
                     .append('<td>'+items[i].lang+'</td>')
                     .append('<td><i class="fa fa-times-circle"></i></td>');
-                console.log($('#'+items[i].id).html());
             }        
 
         });
@@ -133,7 +132,6 @@ $('#submit-add-item').on('click', function () {
         }
      })
       .done(function(res) {
-        console.log(res);
         if (res > 0) {
             $('#add-button').show();
             var mes = 'Cartoon successfully ADDED!';
