@@ -1,0 +1,153 @@
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        width: 100%;
+    }
+    .footer {
+        clear: both;
+    }
+    
+    .content {
+        width: 98%;
+        margin: 0 auto;
+    }
+    
+    .choice-menu {
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+    .help-left, .help-right {
+        width: 30%;
+    }
+    
+    .help-img {
+        width: 99%;
+    }
+    
+    .cartoon-list {
+        width: 64%;
+    }
+    
+    .one-item {
+        font-size: 1.1em;
+    }
+    
+    .showing {
+        width: 98%;
+    }
+    .video {
+        width: 58%;
+    }
+    .play-video {
+        width: 99%;
+        height: 90%;
+    }
+    .info {
+        width: 35%;
+    }
+    
+    .new-user-panel {
+        height: auto;
+    }
+    
+/*
+    .new-user-panel input {
+        display: block;
+    }
+*/
+    .new-user-panel input, .new-user-panel select {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .new-user-panel select {
+        margin-bottom: 10px;
+    }
+    
+    #submit-new-user {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 919px) {
+    
+    body {
+        background-image: url(../img/small.jpg);
+        background-repeat: repeat;
+    }
+    
+    .header-title {
+        margin-left: 10px;
+    }
+    
+    .choice-menu {
+        margin-left: 3%;
+        margin-bottom: 10px;
+        width: 90%;
+        height: auto;
+
+    }
+    .cartoon-list {
+        margin-left: 3%;
+        width: 90%;
+        float: none;
+        height: auto;
+    }
+
+    .help-left, .help-right {
+        display: none;
+    }
+    
+    .categories {
+        text-align: center;
+    }
+    
+    .cartoon-cat, .users-cat {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    
+    .header {
+        height: auto;
+        width: 90%;
+        text-align: center;
+        margin-left: 3%;
+    }
+    
+    .header-title {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .authorization {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    
+    #login {
+        margin-left: 40%;
+        width: 120px;
+    }
+    
+    .showing {
+        height: 100%;
+    }
+    
+    .video {
+        width: 96%;
+        margin-left: 2%;
+        display: block;
+    }
+    
+    .info {
+        height: auto;
+        border: none;
+    }
+    .info, .header-info, .details {
+        display: none;
+    }
+        
+}

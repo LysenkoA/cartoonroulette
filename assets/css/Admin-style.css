@@ -1,0 +1,320 @@
+.categories {
+    width: 100%;
+    margin: 0 0 50px 0;
+    padding: 15px 0 0 0;
+    text-align: center;
+    
+}
+
+.cartoon-cat, .users-cat {
+    width: 47%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(6, 227, 227); 
+    -webkit-box-shadow: 0 0 6px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.5);
+}
+
+.cartoon-cat:hover, .users-cat:hover {
+    cursor: pointer;
+}
+
+.cartoon-cat {
+
+}
+
+#but-cartoon-cat {
+    margin: 0 auto;
+}
+
+.users-cat {
+
+}
+
+#but-users-cat {
+    margin: 0 auto;
+}
+
+.active-cat {
+    position: relative;
+    background-color: rgb(7, 168, 168);
+    border: 2px solid rgba(0,0,0,0.26);
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    box-shadow: none;
+}
+
+.active-cat:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: rgb(7, 168, 168);
+	border-width: 28px;
+	margin-left: -28px;
+}
+
+.active-cat:hover {
+    cursor: default;
+}
+
+/*  cartoons   */
+
+
+.add-item {                     /* div с кнопкой добавления */
+    margin: 15px 0px 10px 10px;
+} 
+
+.add-button-decoration {
+    padding: 5px 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+    box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;    
+}
+
+#add-button {                    /* кпопка добавления */
+
+}
+
+.add-button-decoration:hover {
+    cursor: pointer;
+    background-color: rgba(4, 185, 4, 0.75);
+}
+
+.confirm-item {            /* всплывающее сообщение подтвержд. */
+    color: rgba(2, 162, 2, 0.85);
+    font-weight: bold;
+    margin-left: 40px;
+    text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.87) ;
+}
+
+.error-add {                /* ошибка добавления или удаления */
+    color: rgba(255, 0, 0, 0.85);
+    font-weight: bold;
+    margin-left: 40px;
+    text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.87) ;    
+}
+
+.add-item-panel {            /* окно добавления мультфильма */
+    margin: 20px 5px 10px 5px;
+    padding: 5px;
+    background-color: rgba(87, 232, 232, 0.65);
+    //border: 1px solid red;
+    -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5);
+    box-shadow: 0 0 9px 4px rgba(0,0,0,0.5);
+    display: none;
+}
+
+.add-item-panel p {
+    margin: 20px 0 0 20px;
+}
+
+.add-item-panel p span {
+    width: 200px;
+}
+
+.add-new-lable {
+    display: inline-table;
+}
+
+.mess-add-new {                /* поле не заполнено */
+    color: rgba(255, 0, 0, 0.79);
+    font-size: 0.8em;
+}
+
+[name="title-new-item"], [name="link-new-item"] {
+    padding: 5px;
+    border: 1px solid rgb(0, 155, 255);
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    color: rgb(90, 88, 88);
+    font-weight: bold;
+}
+
+.add-item-panel select {
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(90, 88, 88);
+    font-weight: bold;
+}
+
+.add-item-panel div {
+    margin: 10px;
+    padding: 10px;
+}
+
+#submit-add-item {            /* подтверждение добавления */
+    padding: 10px 10px 5px 10px;
+    color: white;
+    background-color: #38e65d;
+    border: 1px solid rgb(0, 155, 255);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 9px 0 rgba(0,0,0,0.5);
+}
+
+#submit-add-item:hover {
+    cursor: pointer;
+    background-color: #009f22;
+}
+
+#cancel-add-item {
+    padding: 10px 10px 5px 10px;
+    background-color: rgba(183, 181, 181, 0.61);
+    border-radius: 5px;
+    color: white;
+    -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 9px 0 rgba(0,0,0,0.5);
+}
+
+#cancel-add-item:hover {
+    cursor: pointer;
+    background-color: #709393;
+}
+
+.fa-times-circle:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/*        users       */
+
+.admin-users { /* user's div in admin panel */
+    display: none;
+}
+
+.add-new-user { /* div  кнопкой для добавления пользователя */
+    margin: 50px 20px;
+}
+
+.but-add-user { /* added user */
+}
+
+.new-user-panel {
+    margin: 20px 10px;
+    padding: 10px;
+    background-color: rgb(2, 170, 170);
+}
+
+.new-user-panel label {
+    padding: 5px;
+    color: white;
+}
+
+.new-user-panel input {
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#role-new-user {
+    padding: 5px;
+    border: none;
+}
+
+#submit-new-user, #cancel-new-user {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+#submit-new-user {
+    margin-left: 30px;
+    background-color: #82ff82;
+}
+
+#submit-new-user:hover {
+    cursor: pointer;
+    background-color: #019801;
+}
+
+#cancel-new-user {
+    background-color: #c6c4c4;
+}
+
+#cancel-new-user:hover {
+    cursor: pointer;
+    background-color: #9a9797;
+}
+
+.td-user-del {
+    width: 20px;
+}
+
+.td-user-edit {
+    width: 20px;
+}
+
+.td-user-edit .fa-edit:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+/* редактирование юзера */
+
+#new-name, #new-email, #new-role, #ed-cancel, #ed-submit {
+    display: block;
+}
+
+#ed-submit:hover {
+    cursor: pointer;
+    color: green;
+}
+
+#new-name, #new-email, #new-role {
+    padding: 5px;
+    border: none;
+}
+
+/* */
+
+.table-style {
+    margin: 20px 10px 10px 10px;
+    width: 98%;
+    border-collapse: collapse;
+    -webkit-box-shadow: 0 0 6px 2px rgba(0,0,0,0.46) ;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.46) ;
+    font-family: gost;
+    font-size: 1.2em;
+}
+
+.table-style-head {
+    background-color: #04a304;
+    color: white;
+}
+
+.table-style-head tr th {
+    padding: 5px;    
+}
+
+.table-style-body {
+    background-color: #dfffdf;
+    color: black;
+}
+
+.table-style-body tr {
+
+}
+
+.table-style-body tr:hover {
+    background-color: #82ff82;
+}
+
+.table-style-body tr td {
+    padding: 5px;
+}

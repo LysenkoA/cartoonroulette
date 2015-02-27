@@ -1,0 +1,56 @@
+.registration-form {
+    margin: 20px;
+    height: 100%;
+    padding: 50px;
+}
+
+.registration-form p {
+    margin: 20px 20px;
+}
+
+.registration-form p label {
+    color: white;
+    display: inline-table;
+    //background-color: red;
+    width: 120px;
+}
+
+.registration-form p input {
+    //display: inline-table;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    color: #8b8b8b;
+    font-family: LS;
+}
+
+#reg-submit {
+    margin: 20px;
+    padding: 10px;
+    background: rgb(0, 136, 253);
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 0 0 1px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.5);
+}
+
+#reg-submit:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 6px 2px rgba(7,36,255,0.5);
+    box-shadow: 0 0 6px 2px rgba(7,36,255,0.5);
+}
+
+.reg-err {
+    margin: 0 20px;
+    color: red;
+}
+
+.alert-user-exist {
+    color: red;
+    margin-left: 10px;
+}
