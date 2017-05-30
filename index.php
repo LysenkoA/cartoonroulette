@@ -23,6 +23,8 @@
 
 <div class="wrapper">
 
+	<!-- comment -->
+
 	<header class="header block-decoration">
 		<div class="header-title">
           <a href="index.php">
