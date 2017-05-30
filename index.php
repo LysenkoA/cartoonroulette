@@ -23,7 +23,7 @@
 
 <div class="wrapper">
 
-	<!-- comment -->
+	<!-- comment ...-->
 
 	<header class="header block-decoration">
 		<div class="header-title">
